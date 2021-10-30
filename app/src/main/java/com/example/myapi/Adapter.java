@@ -44,7 +44,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        TextView country , region , country_code;
+        TextView country , region , country_code, countries;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

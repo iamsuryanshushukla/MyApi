@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Post {
 //    private float id;
-    @SerializedName("country")
-    private String name;
+@SerializedName("country")
+private String name;
     @SerializedName("region")
     private String region;
     @SerializedName("code")
@@ -18,6 +18,12 @@ public class Post {
 
     public List<Post> getCountries() {
         return countries;
+    }
+
+    public Post(String name, String region, String country_code) {
+        this.name = name;
+        this.region = region;
+        this.country_code = country_code;
     }
 
     public void setCountries(List<Post> countries) {
